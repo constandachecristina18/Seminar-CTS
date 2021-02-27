@@ -21,6 +21,7 @@ public class Main {
 		zoo.adaugareAnimal(girafa2);
 		
 		zoo.feedAnimals();
+		zoo.mutareAnimale();
 
 	}
 
