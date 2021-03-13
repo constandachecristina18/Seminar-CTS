@@ -59,9 +59,16 @@ public abstract class Aplicant{
 	public int getNr_proiecte() {
 		return nr_proiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
+	
+	public String[] getDenumireProiect() {
+		return denumireProiect;
 	}
+	
+	public void setDenumiriProiecte(String[] denumireProiect, int nrProiecte) {
+		this.denumireProiect = denumireProiect;
+		this.nr_proiecte=nrProiecte;
+	}
+	
 	
 	public abstract void afisareSumaFinantata();
 	public String compunereStringPentruSumaFinantata(int suma, String tipAplicant) {
