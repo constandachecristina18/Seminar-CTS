@@ -29,7 +29,7 @@ public class ReceptieHotel {
 		this.numeHotel = numeHotel;
 	}		
 	
-	public static ReceptieHotel getInstanta(String numeReceptioner, int etaj, String numeHotel) {
+	public static synchronized ReceptieHotel getInstanta(String numeReceptioner, int etaj, String numeHotel) {
 		if(instanta==null) {
 			instanta = new ReceptieHotel(numeReceptioner,  etaj, numeHotel);
 		}
