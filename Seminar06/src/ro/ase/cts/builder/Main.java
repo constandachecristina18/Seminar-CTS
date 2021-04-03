@@ -19,6 +19,14 @@ public class Main {
 		
 		
 		System.out.println(r4.toString());
+		
+		RezervareBuilderV2 rezervareBuilderV2 = new RezervareBuilderV2();
+		rezervareBuilderV2.setAreMancareInclusa(true).setAreBauturaInclusa(true).setAreMuzicaAmbientala(true);
+		Rezervare r5 = rezervareBuilderV2.setCodRezervare(4).build();
+		Rezervare r6 = rezervareBuilderV2.setCodRezervare(5).build();
+		
+		System.out.println(r5.toString());
+		System.out.println(r6.toString());
 	}
 
 	
