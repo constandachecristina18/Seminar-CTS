@@ -1,8 +1,8 @@
 package ro.ase.cts.models;
 
-public class Client implements Observer {
+public class Client implements Observer{
 	private String nume;
-
+	
 	public Client(String nume) {
 		super();
 		this.nume = nume;
@@ -13,4 +13,5 @@ public class Client implements Observer {
 		// TODO Auto-generated method stub
 		System.out.println("Clientul "+this.nume+" a primit mesajul "+mesaj);
 	}
+
 }

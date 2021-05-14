@@ -11,14 +11,14 @@ public class Main {
 		Client c1=new Client("Ion");
 		Client c2=new Client("Ioana");
 		Client c3=new Client("Mihai");
-
+		
 		restaurant.adaugaObserver(c1);
 		restaurant.adaugaObserver(c2);
 		restaurant.realizareOfertaPret();
-
+		
 		restaurant.stergeObserver(c2);
 		restaurant.adaugaObserver(c3);
-
+		
 		restaurant.introducereMeniu();
 	}
 
